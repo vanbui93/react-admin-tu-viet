@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "thông tin về covid-19",
+      "body": "Sáng 2/8, Thứ trưởng Bộ Y tế Nguyễn Trường Sơn, Trưởng Bộ phận thường trực đặc biệt chống dịch Covid-19 của Bộ Y tế tại TP Đà Nẵng thông tin về hai trường hợp tử vong do nền bệnh lý nặng."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Vân Bùi",
+      "username": "vanbui",
+      "email": "van.bt.38@gmail.com",
+      "address": {
+        "street": "Hoàng hoa thám",
+        "suite": "Số 20",
+        "city": "Hồ chí minh",
+        "zipcode": "70000"
+      },
+      "phone": "0979814134",
+      "website": "Vanbui.info",
+      "company": {
+        "name": "Haravan",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

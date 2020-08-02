@@ -20,7 +20,7 @@ import { useMediaQuery } from '@material-ui/core';
 export const PostCreate = props => (
   <Create {...props}>
     <SimpleForm>
-      <ReferenceInput source="userId" reference="users">
+      <ReferenceInput source="" reference="users">
         <SelectInput optionText="name" />
       </ReferenceInput>
       <TextInput source="title" />
