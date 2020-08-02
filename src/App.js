@@ -3,8 +3,11 @@ import jsonServerProvider from 'ra-data-json-server';
 import { Admin, Resource } from 'react-admin';
 import { UserList } from './components/users';
 import { PostList, PostEdit, PostCreate } from './components/posts';
-import Dashboard from './components/Dashboard';
+
+import Dashboard from './components/dashboard/Dashboard';
 import authProvider from './components/authProvider';
+import categories from './components/categories';
+
 
 import PostIcon from '@material-ui/icons/Book';
 import UserIcon from '@material-ui/icons/Group';
@@ -27,9 +30,11 @@ class App extends Component {
         );
     }
   return (
+    //name="posts" => là endpoint, vd:  http://localhost:3000/posts
     <Admin dashboard={Dashboard} dataProvider={dataProvider} authProvider={authProvider}>
       <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon} />
       <Resource name="users" list={UserList} icon={UserIcon} />
+      <Resource name="categories" {...categories} />
     </Admin>
   );
 }
