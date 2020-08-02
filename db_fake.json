@@ -70,12 +70,18 @@
     {
       "id": 1,
       "name":"Tuổi trẻ của tôi nằm trong từng chuyến đi, từng trải nghiệm",
-      "img": "https://kenh14cdn.com/thumb_w/250/2020/8/2/0f-1596360779781987607043-crop-15963607880131086263513.png"
+      "img": "https://kenh14cdn.com/thumb_w/250/2020/8/2/0f-1596360779781987607043-crop-15963607880131086263513.png",
+      "price": 300,
+      "width": 140,
+      "height": 140
     },
     {
       "id": 2,
       "name":"Đạo đức của nút share: Đừng để ý tốt của mình biến thành công cụ xấu cho tin giả!",
-      "img": "https://kenh14cdn.com/thumb_w/250/2020/8/2/fanndfna-159636010965622805097-crop-15963601181731185463450.jpg"
+      "img": "https://kenh14cdn.com/thumb_w/250/2020/8/2/fanndfna-159636010965622805097-crop-15963601181731185463450.jpg",
+      "price": 50,
+      "width": 140,
+      "height": 140
     }
   ],
   "profile": {
