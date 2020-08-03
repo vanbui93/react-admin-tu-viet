@@ -10,7 +10,7 @@ import {
     required,
 } from 'react-admin';
 import withStyles from '@material-ui/core/styles/withStyles';
-// import RichTextInput from 'ra-input-rich-text';
+import RichTextInput from 'ra-input-rich-text';
 
 export const styles = {
     stock: { width: '5em' },
@@ -24,7 +24,7 @@ export const styles = {
 const ProductCreate = ({ classes, ...props }) => (
     <Create {...props}>
         <TabbedForm>
-            <FormTab label="resources.products.tabs.image">
+            <FormTab label="Image">
                 <TextInput
                     autoFocus
                     source="image"
@@ -37,8 +37,8 @@ const ProductCreate = ({ classes, ...props }) => (
                     validate={required()}
                 />
             </FormTab>
-            <FormTab label="resources.products.tabs.details" path="details">
-                <TextInput source="reference" validate={required()} />
+            <FormTab label="details" path="details">
+                <TextInput source="name" validate={required()} />
                 <NumberInput
                     source="price"
                     validate={required()}
@@ -57,7 +57,7 @@ const ProductCreate = ({ classes, ...props }) => (
                     formClassName={classes.heightFormGroup}
                 />
                 <ReferenceInput
-                    source="category_id"
+                    source="categoryId"
                     reference="categories"
                     allowEmpty
                 >
@@ -70,10 +70,10 @@ const ProductCreate = ({ classes, ...props }) => (
                 />
             </FormTab>
             <FormTab
-                label="resources.products.tabs.description"
+                label="description"
                 path="description"
             >
-                {/* <RichTextInput source="description" addLabel={false} /> */}
+                <RichTextInput source="description" addLabel={false} />
             </FormTab>
         </TabbedForm>
     </Create>
