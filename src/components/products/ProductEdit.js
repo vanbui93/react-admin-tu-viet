@@ -16,6 +16,7 @@ import {
 } from 'react-admin';
 import withStyles from '@material-ui/core/styles/withStyles';
 
+import RichTextInput from 'ra-input-rich-text';
 // import CustomerReferenceField from '../visitors/CustomerReferenceField';
 // import StarRatingField from '../reviews/StarRatingField';
 import Poster from './Poster';
@@ -43,7 +44,7 @@ const ProductEdit = ({ classes, ...props }) => (
                 <TextInput source="thumbnail" options={{ fullWidth: true }} />
             </FormTab>
             <FormTab label="details" path="details">
-                <TextInput source="reference" />
+                <TextInput source="name" />
                 <NumberInput source="price" className={classes.price} />
                 <NumberInput
                     source="width"
@@ -64,7 +65,7 @@ const ProductEdit = ({ classes, ...props }) => (
                 label="description"
                 path="description"
             >
-                {/* <RichTextInput source="description" addLabel={false} /> */}
+                <RichTextInput source="description" addLabel={false} />
             </FormTab>
             <FormTab label="reviews" path="reviews">
                 <ReferenceManyField

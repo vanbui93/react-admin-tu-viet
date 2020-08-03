@@ -18,6 +18,12 @@ Tạo data mẫu giả fake
 ```js
 npm add react-admin ra-data-json-server prop-types
 ```
+
+Cài đặt Edit text `RichTextInput` để làm trình soạn thảo văn bản
+```js
+npm i ra-input-rich-text
+```
+
 Để run app
 ```js
 npm start
