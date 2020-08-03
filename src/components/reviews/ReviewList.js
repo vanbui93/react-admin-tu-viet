@@ -8,8 +8,8 @@ import Drawer from '@material-ui/core/Drawer';
 // import BulkAcceptButton from './BulkAcceptButton';
 // import BulkRejectButton from './BulkRejectButton';
 // import ReviewListMobile from './ReviewListMobile';
-// import ReviewListDesktop from './ReviewListDesktop';
-// import ReviewFilter from './ReviewFilter';
+import ReviewListDesktop from './ReviewListDesktop';
+import ReviewFilter from './ReviewFilter';
 // import ReviewEdit from './ReviewEdit';
 
 // const ReviewsBulkActionButtons = props => (
@@ -28,14 +28,14 @@ class ReviewList extends Component {
                 <List
                     {...props}
                     // bulkActionButtons={<ReviewsBulkActionButtons />}
-                    // filters={<ReviewFilter />}
+                    filters={<ReviewFilter />}
                     perPage={25}
                     sort={{ field: 'date', order: 'DESC' }}
                 >
-                    {/* <Responsive
-                        xsmall={<ReviewListMobile />}
+                    <Responsive
+                        // xsmall={<ReviewListMobile />}
                         medium={<ReviewListDesktop />}
-                    /> */}
+                    />
                 </List>
                 <Route path="/reviews/:id">
                     {({ match }) => {
