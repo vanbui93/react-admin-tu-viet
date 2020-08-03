@@ -10,7 +10,7 @@ import Drawer from '@material-ui/core/Drawer';
 // import ReviewListMobile from './ReviewListMobile';
 import ReviewListDesktop from './ReviewListDesktop';
 import ReviewFilter from './ReviewFilter';
-// import ReviewEdit from './ReviewEdit';
+import ReviewEdit from './ReviewEdit';
 
 // const ReviewsBulkActionButtons = props => (
 //     <Fragment>
@@ -51,13 +51,13 @@ class ReviewList extends Component {
                                 onClose={this.handleClose}
                             >
                                 {/* To avoid any errors if the route does not match, we don't render at all the component in this case */}
-                                {/* {isMatch ? (
+                                {isMatch ? (
                                     <ReviewEdit
                                         id={match.params.id}
                                         onCancel={this.handleClose}
                                         {...props}
                                     />
-                                ) : null} */}
+                                ) : null}
                             </Drawer>
                         );
                     }}
