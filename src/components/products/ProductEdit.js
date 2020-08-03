@@ -18,7 +18,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 // import CustomerReferenceField from '../visitors/CustomerReferenceField';
 // import StarRatingField from '../reviews/StarRatingField';
-// import Poster from './Poster';
+import Poster from './Poster';
 import { styles as createStyles } from './ProductCreate';
 
 
@@ -38,7 +38,7 @@ const ProductEdit = ({ classes, ...props }) => (
     <Edit {...props} title={<ProductTitle />}>
         <TabbedForm>
             <FormTab label="Image">
-                {/* <Poster /> */}
+                <Poster />
                 <TextInput source="image" options={{ fullWidth: true }} />
                 <TextInput source="thumbnail" options={{ fullWidth: true }} />
             </FormTab>
