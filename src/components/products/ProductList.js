@@ -1,16 +1,23 @@
+import Chip from '@material-ui/core/Chip';
+import { makeStyles } from '@material-ui/core/styles';
+import withStyles from '@material-ui/core/styles/withStyles';
 import React from 'react';
 import {
-    translate,
-    Filter,
+    Datagrid, Filter,
     List,
     NumberInput,
     ReferenceInput,
     SearchInput,
     SelectInput,
+    ImageField,
+    EditButton,
+    ReferenceField,
+    TextField, translate
 } from 'react-admin';
-import Chip from '@material-ui/core/Chip';
-import withStyles from '@material-ui/core/styles/withStyles';
-import GridList from './GridList';
+
+const useStyles = makeStyles({
+    priceHeader: { fontWeight: 'bold' },
+});
 
 const quickFilterStyles = {
     root: {
@@ -46,6 +53,11 @@ export const ProductFilter = props => (
     </Filter>
 );
 
+const PriceField = props => {
+    const classes = useStyles();
+    return <TextField headerClassName={classes.priceHeader} {...props} />;
+}
+
 const ProductList = props => (
     <List
         {...props}
@@ -53,7 +65,18 @@ const ProductList = props => (
         perPage={20}
         sort={{ field: 'id', order: 'ASC' }}
     >
-        <GridList />
+       <Datagrid>
+            <TextField source="id" />
+            <TextField source="name" />
+            <ImageField source="image" />
+            <PriceField source="price" />
+            <PriceField source="stock" />
+            <ReferenceField source="categoryId" reference="categories">
+                <TextField source="name" />
+            </ReferenceField>
+            <PriceField source="description" />
+            <EditButton />
+        </Datagrid>
     </List>
 );
 

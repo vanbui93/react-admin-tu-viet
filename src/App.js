@@ -7,6 +7,7 @@ import { PostList, PostEdit, PostCreate } from './components/posts';
 import Dashboard from './components/dashboard/Dashboard';
 import authProvider from './components/authProvider';
 import categories from './components/categories';
+import products from './components/products';
 
 
 import PostIcon from '@material-ui/icons/Book';
@@ -35,6 +36,7 @@ class App extends Component {
       <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} icon={PostIcon} />
       <Resource name="users" list={UserList} icon={UserIcon} />
       <Resource name="categories" {...categories} />
+      <Resource name="products" {...products} />
     </Admin>
   );
 }

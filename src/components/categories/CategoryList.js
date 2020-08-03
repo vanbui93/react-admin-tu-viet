@@ -1,5 +1,5 @@
 import React from 'react';
-import { Datagrid, EditButton, List, TextField } from 'react-admin';
+import { Datagrid, EditButton, List, TextField,ImageField } from 'react-admin';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 import LinkToRelatedProducts from './LinkToRelatedProducts';
@@ -12,6 +12,7 @@ const CategoryList = ({ classes, ...props }) => (
     <List {...props} sort={{ field: 'name', order: 'ASC' }}>
         <Datagrid>
             <TextField source="name" className={classes.name} />
+            <ImageField source="url" />
             <LinkToRelatedProducts />
             <EditButton />
         </Datagrid>

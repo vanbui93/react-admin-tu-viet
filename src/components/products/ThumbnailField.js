@@ -6,7 +6,7 @@ const styles = {
 };
 
 const ThumbnailField = withStyles(styles)(({ classes, record }) => (
-    <img src={record.thumbnail} className={classes.root} alt="" />
+    <img src={record.url} className={classes.root} alt="" />
 ));
 
 export default ThumbnailField;
