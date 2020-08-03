@@ -18,7 +18,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 
 import RichTextInput from 'ra-input-rich-text';
 // import CustomerReferenceField from '../visitors/CustomerReferenceField';
-// import StarRatingField from '../reviews/StarRatingField';
+// import StarRatingField from '../reviews';
 import Poster from './Poster';
 import { styles as createStyles } from './ProductCreate';
 
@@ -68,7 +68,10 @@ const ProductEdit = ({ classes, ...props }) => (
                 <RichTextInput source="description" addLabel={false} />
             </FormTab>
             <FormTab label="reviews" path="reviews">
-                <ReferenceManyField
+                {/* Tham chiếu đến table reviews, một sản phẩm có nhiều reviews, và 1 review có 1 id_product */}
+                {/* <ReferenceManyField> có thể fetch tất cả những reviews được đánh giá bởi 1 người dùng nhất định*/}
+                {/* reference="reviews" => tham chiếu đến bảng reviews, có target="product_id" */}
+                <ReferenceManyField 
                     reference="reviews"
                     target="product_id"
                     addLabel={false}
@@ -82,6 +85,7 @@ const ProductEdit = ({ classes, ...props }) => (
                             source="comment"
                             cellClassName={classes.comment}
                         />
+                        <TextField source="rating" />
                         <TextField source="status" />
                         <EditButton />
                     </Datagrid>

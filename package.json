@@ -12,7 +12,6 @@
     "react": "^16.13.1",
     "react-admin": "^3.7.1",
     "react-dom": "^16.13.1",
-    "react-rich-text-editor": "^2.1.2",
     "react-scripts": "3.4.1"
   },
   "scripts": {

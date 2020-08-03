@@ -24,6 +24,8 @@ Cài đặt Edit text `RichTextInput` để làm trình soạn thảo văn bản
 npm i ra-input-rich-text
 ```
 
+**Muốn sử dụng component bắt buộc phải khai báo trong App.js**
+
 Để run app
 ```js
 npm start

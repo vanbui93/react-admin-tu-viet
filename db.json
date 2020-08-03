@@ -96,8 +96,7 @@
       "description": "<p>rererererer w<strong><em>ewe we</em></strong></p>",
       "categoryId": 2,
       "thumbnail": "https://kenh14cdn.com/zoom/327_205/2020/8/2/runpiprun11612888212302774073318222197563734494472203n-15957428944381724662503-15963764595091955931056-crop-15963765148401643357073.jpg",
-      "reference": null,
-      "category_id": 2
+      "reference": null
     },
     {
       "id": 2,
@@ -109,8 +108,27 @@
       "height": 100,
       "description": "description",
       "categoryId": 1,
-      "thumbnail": "https://kenh14cdn.com/zoom/327_205/2020/8/2/runpiprun11612888212302774073318222197563734494472203n-15957428944381724662503-15963764595091955931056-crop-15963765148401643357073.jpg",
-      "category_id": 1
+      "thumbnail": "https://kenh14cdn.com/zoom/327_205/2020/8/2/runpiprun11612888212302774073318222197563734494472203n-15957428944381724662503-15963764595091955931056-crop-15963765148401643357073.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "product_id":1,
+      "customerId":2,
+      "date": "02-06-2020",
+      "rating": 3,
+      "comment":"cho shop 10 sao",
+      "status": "Đã duyệt"
+    },
+    {
+      "id": 2,
+      "product_id":2,
+      "customerId":1,
+      "rating": 2,
+      "date": "04-08-2020",
+      "comment":"sản phẩm tốt",
+      "status": "Chưa duyệt"
     }
   ],
   "profile": {
